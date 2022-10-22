@@ -8,7 +8,24 @@ Apk Preview
 </p>
 
 ## Apk Link
-- [Hiling.id =>]()
+- [Hiling.id =>](./hiling-id-8f2313797b89407982a60fb33ba3c82d-signed.apk)
+
+## Repo Structure
+```
+/
+├─ src/              # All assets, components, db, and screen. Also routes
+│  ├─ assets/        # Dummy or images and video
+│  ├─ components/    # All components are here
+│  |   └─ index.js   # Routing every components 
+│  ├─ database/      # Currently dummy data with JSON type
+│  ├─ routes/        # Stack navigator keep here 
+│  │   └─ index.js   # Work as third layer route and make it into component 
+│  ├─ screen/        # Put all of layout or screen file
+|  ├─index.js        # Second layer route to call from routes/index.js
+│
+├─ App.js            # Main js to be rendered, 
+                       cause only CLI that appear index.js at root folder 
+```
 
 ## Installation
 Run the following command below in project terminal root to build android apk
