@@ -1,14 +1,7 @@
 import React from 'react';
-import {View, Text, StatusBar, KeyboardAvoidingView, StyleSheet} from 'react-native';
-import Forms from '../components/homeForm';
+import {View, Text, StatusBar, KeyboardAvoidingView} from 'react-native';
+import {Forms} from '../components';
 import { FontAwesome5 } from '@expo/vector-icons';
-
-const formsStyle = StyleSheet.create({
-    elevations: {
-        elevation:1,
-    },
-});
-
 
 const Home = () =>{
     return(
@@ -23,9 +16,9 @@ const Home = () =>{
                 </View>
             </View>
             <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} className="z-20 h-full w-10/12 absolute justify-center self-center">
-                <Forms className=""/>
+                <Forms/>
             </KeyboardAvoidingView>
-            <Text className="bottom-0 absolute self-center pb-9">
+            <Text className="bottom-0 absolute self-center pb-8">
                 Copyright Adi Sulaksono ©️120140038
             </Text>
             <StatusBar style="auto"/>
